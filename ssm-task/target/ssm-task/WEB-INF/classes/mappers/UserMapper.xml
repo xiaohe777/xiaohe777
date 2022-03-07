@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+跟标签mapper
+namespace: 命名空间
+-->
+<mapper namespace="com.yjxxt.mapper.UserMapper">
+    <insert id="addUser" parameterType="com.yjxxt.pojo.User">
+        insert into user values(#{userName,#{passWord})
+    </insert>
+    <delete id="delUser" parameterType="string">
+        delete from user where username = #{userName}
+    </delete>
+    <!--
+    查询标签: select 用于编写查询语句
+    id : 当前文件中保证唯一
+    resultType : 结果的类型
+    parameterType : 入参类型
+    -->
+<select id="queryAll" resultType="com.yjxxt.pojo.User">
+select * from user
+</select>
+    <select id="selectByName" resultType="com.yjxxt.pojo.User">
+        select * from user where username = #{name}
+    </select>
+</mapper>

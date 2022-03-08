@@ -25,6 +25,7 @@ public class UserController {
 //            System.out.println(3/0);
         }
 
+        System.out.println("哈哈");
         return userService.queryAll();
     }
 }

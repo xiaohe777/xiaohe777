@@ -14,6 +14,7 @@ public class UserService {
     private UserMapper userMapper;
 
     public List<User> queryAll(){
+        System.out.println("哈哈哈");
         return userMapper.queryAll();
     }
 }

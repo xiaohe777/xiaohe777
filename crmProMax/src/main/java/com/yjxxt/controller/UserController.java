@@ -39,6 +39,7 @@ public class UserController extends BaseController {
         //实例化结果集
         ResultInfo resultInfo = new ResultInfo();
         resultInfo.setResult(model);
+        System.out.println("hello");
         return resultInfo;
     }
 

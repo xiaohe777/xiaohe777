@@ -81,6 +81,7 @@
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
+    and 1=1
   </update>
   <update id="updateByPrimaryKey" parameterType="com.yjxxt.pojo.UserRole" >
     update t_user_role

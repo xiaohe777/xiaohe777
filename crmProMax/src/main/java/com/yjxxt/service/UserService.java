@@ -49,6 +49,9 @@ public class UserService extends BaseService<User,Integer> {
         AssertUtil.isTrue(null == temp,"用户不存在或已注销");
         //校验密码
         checkUserPwd(UserPwd,temp.getUserPwd());
+        if(true){
+            System.out.println("hello");
+        }
         //返回结果
         return buildUserModel(temp);
 

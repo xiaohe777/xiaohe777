@@ -52,6 +52,9 @@ public class UserService extends BaseService<User,Integer> {
         if(true){
             System.out.println("hello");
         }
+        if(false){
+            System.out.println("hello world");
+        }
         //返回结果
         return buildUserModel(temp);
 

@@ -53,7 +53,7 @@ public class UserService extends BaseService<User,Integer> {
             System.out.println("hello");
         }
         if(false){
-            System.out.println("hello world");
+            System.out.println("hello AI");
         }
         //返回结果
         return buildUserModel(temp);
